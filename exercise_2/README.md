@@ -16,8 +16,8 @@ To set up the project on your local machine, follow these steps:
 
 1. Clone the repository and navigate to the project directory:
    ```bash
-   git clone <repository_url>
-   cd exercise_2/
+   git clone https://github.com/abhikrishnaram/eistudy-coding-exercises
+   cd eistudy-coding-exercises/exercise_2/
    ```
 
 2. Install dependencies:

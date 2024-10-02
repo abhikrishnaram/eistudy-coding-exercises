@@ -4,8 +4,8 @@ This repository contains solutions for a coding assessment task. The task consis
 
 ## Table of Contents
 
-- [Exercise 1: Design Patterns](#exercise-1-design-patterns)
-- [Exercise 2: Rocket Launch Simulator](#exercise-2-rocket-launch-simulator)
+- [Exercise 1: Design Patterns](./exercise_1)
+- [Exercise 2: Rocket Launch Simulator](./exercise_2)
 
 ## Exercise 2: Rocket Launch Simulator
 
@@ -38,9 +38,10 @@ To run the design patterns examples, navigate to the `exercise_1` directory and 
 
 ```bash
 cd exercise_1/
-npm run build
-node dist/<pattern>/<filename>.js
+npm run start
 ```
+[Learn More](./exercise_1)
+
 
 ### Running Exercise 2
 
@@ -52,12 +53,13 @@ npm install
 npm run start
 ```
 
-#### Available Commands in the Simulator
+[Learn More](./exercise_2)
 
-- `start_checks`: Perform pre-launch checks.
-- `launch`: Initiate the launch sequence.
-- `fast_forward X`: Fast forward the simulation by X seconds.
-- `exit`: Exit the simulator.
+## Author - **Abhiram Krishna**
+- Email: [abhikrishnaram88@gmail.com](mailto:abhikrishnaram88@gmail.com)
+- GitHub: [GitHub Profile](https://github.com/abhikrishnaram)
+- LinkedIn: [LinkedIn Profile](https://linkedin.com/in/abhikrishnaram)
+
 
 ## License
 

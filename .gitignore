@@ -1,5 +1,5 @@
 # Dependency directories
-node_modules/
+exercise_2/node_modules/
 jspm_packages/
 
 # TypeScript output directory
@@ -11,3 +11,5 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+.idea/

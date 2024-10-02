@@ -20,6 +20,19 @@ The first exercise involves demonstrating an understanding of various software d
 - **Strategy Pattern**: A payment processing system that allows different payment methods to be selected at runtime.
 - **Factory Pattern**: A shape factory that creates different shapes based on user input.
 
+
+## Design Pattern Folders
+
+| Pattern    | Type        | Description                | Link                                    |
+|------------|-------------|----------------------------|-----------------------------------------|
+| Singleton  | Creational  | Logger class example       | [Singleton](./src/creational/case_1.ts) |
+| Builder    | Creational  | APIRequestBuilder example  | [Builder](./src/creational/case_2.ts)   |
+| Facade     | Structural  | PaymentFacade example      | [Facade](./src/structural/case_1.ts)    |
+| Adapter    | Structural  | WeatherAdapter example     | [Adapter](./src/structural/case_2.ts)   |
+| Observer   | Behavioral  | Sale class example         | [Observer](./src/behavioral/case_1.ts)  |
+| Iterator   | Behavioral  | Pagination system example  | [Iterator](./src/behavioral/case_2.ts)  |
+
+
 ## Implementation
 
 The design patterns are implemented in a modular and reusable way to showcase their flexibility and ease of use. Each pattern is demonstrated with a specific use case and example code to illustrate its application.
@@ -30,8 +43,8 @@ To run the examples, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
-   cd exercise_1
+   git clone https://github.com/abhikrishnaram/eistudy-coding-exercises
+   cd eistudy-coding-exercises/exercise_1/
    ```
 
 2. **Install dependencies**:
@@ -39,27 +52,11 @@ To run the examples, follow these steps:
    npm install
    ```
 
-3. **Compile TypeScript files**:
+3. **Run the examples**:
+   You can run the compiled JavaScript files located in the `dist` directory manually or just run the following command:
    ```bash
-   npm run build
+   npm run start
    ```
-
-4. **Run the examples**:
-   You can run the compiled JavaScript files located in the `dist` directory. For example:
-   ```bash
-   node dist/creational/case_1.js
-   ```
-
-## Design Pattern Folders
-
-| Pattern          | Description                                   | Link                     |
-|------------------|-----------------------------------------------|--------------------------|
-| Singleton        | Logger class example                          | [Singleton](./src/creational/case_1.ts) |
-| Builder          | APIRequestBuilder example                     | [Builder](./src/creational/case_2.ts) |
-| Adapter          | WeatherAdapter example                        | [Adapter](./src/structural/case_2.ts) |
-| Observer         | Sale class example                            | [Observer](./src/behavioral/case_1.ts) |
-| Strategy         | Payment processing system example             | [Strategy](./src/behavioral/case_2.ts) |
-| Factory          | Shape factory example                         | [Factory](./src/creational/case_3.ts) |
 
 ## Additional Information
 
@@ -68,5 +65,3 @@ To run the examples, follow these steps:
   ```bash
   npm install -g typescript
   ```
-
-This README provides a comprehensive overview of the project, including how to run the examples and navigate through the design patterns implemented.

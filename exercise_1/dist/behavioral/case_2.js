@@ -56,17 +56,20 @@ class PaginatedIterator {
     next() {
         return __awaiter(this, void 0, void 0, function* () {
             if (yield this.hasNext()) {
-                return this.items[this.currentIndex++];
+                this.currentIndex += this.dataSource.itemsPerPage;
+                return this.items[this.currentIndex];
             }
             return null;
         });
     }
     getItems() {
         return __awaiter(this, void 0, void 0, function* () {
-            if (yield this.hasNext()) {
-                return this.items;
+            // Ensure we fetch items if the current index is beyond the length of items
+            if (this.currentIndex >= this.items.length) {
+                yield this.hasNext(); // Fetch the next page if not already done
             }
-            return [];
+            // Return current items or an empty array if no items are available
+            return this.items.length > 0 ? this.items.slice(this.currentIndex) : [];
         });
     }
 }
@@ -78,6 +81,7 @@ function paginateThroughItems() {
             const items = yield iterator.getItems();
             items.forEach(item => console.log(`Loaded item ${item}`));
             console.log("Loading more items...");
+            yield iterator.next(); // Move to the next item
         }
         console.log("No more items to load.");
     });
