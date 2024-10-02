@@ -1,0 +1,15 @@
+{
+  "name": "designpatterns-examples",
+  "version": "1.0.0",
+  "description": "A collection code snippets to understand some design-patterns easily.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node index.js"
+  },
+  "author": "Abhiram Krishna <abhikrishnaram88@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+      "typescript": "^4.0.0"
+  }
+}
